@@ -18,7 +18,6 @@ const resultStyle = computed(() => {
             return 'bg-gray-100'
     }
 })
-console.log(resultStyle)
 </script>
 
 <template>

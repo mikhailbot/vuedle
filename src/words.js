@@ -2,7 +2,7 @@ export const getRandomWord = () => {
     return words[Math.floor(Math.random() * words.length)]
 }
 
-const words = [
+export const words = [
     'aahed',
     'aalii',
     'aargh',

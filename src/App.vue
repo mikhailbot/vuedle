@@ -15,6 +15,7 @@
 import { reactive, onMounted } from 'vue'
 import WordInput from './components/WordInput.vue'
 import { getRandomWord } from './words'
+import { isValidWord } from './helpers'
 
 const state = reactive({
   activeGuess: 0,
@@ -28,6 +29,11 @@ onMounted(() => {
 
 function submitGuess(letterArray) {
   const wordArray = state.word.split('')
+
+  if (!isValidWord(letterArray.join(''))) {
+    alert('Not in wordlist')
+    return
+  }
 
   state.guessResults[state.activeGuess] = letterArray.map((letter, i) => {
     if (letter.toLowerCase() === wordArray[i]) {

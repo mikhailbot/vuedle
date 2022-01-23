@@ -8,6 +8,8 @@
 - [ ] Manage start/end of game state
 - [ ] Display help and other messages (e.g. word not in wordlist)
 - [ ] Show on-screen keyboard
+- [ ] Create unit tests
+- [ ] Create integration tests
 
 ## Project setup
 ```

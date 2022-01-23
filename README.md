@@ -1,24 +1,23 @@
 # vuedle
+> Recreating the [Wordle game](https://www.powerlanguage.co.uk/wordle/) to learn Vue 3's new composition API
+
+## Requirements
+- [x] Allow guessing words
+- [x] Indicate what letters are correct, present, or incorrect
+- [ ] Animate results display
+- [ ] Manage start/end of game state
+- [ ] Display help and other messages (e.g. word not in wordlist)
+- [ ] Show on-screen keyboard
 
 ## Project setup
 ```
+# Development
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+# Production
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
+## Created with VueJS CLI
 See [Configuration Reference](https://cli.vuejs.org/config/).
